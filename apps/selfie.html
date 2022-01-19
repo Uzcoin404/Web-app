@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Selfie</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+<body class="body">
+
+    <main class="main selfie_main" style="padding: 0;">
+        <div class="wrapper selfie">
+            <nav class="nav">
+                <div class="container">
+                    <div class="nav_content">
+                        <div class="logo">
+                            <a href="/" class="logo_text">Uzcoin</a>
+                        </div>
+                        <ul class="nav_list">
+                            <li><a href="#" class="nav_link">Home</a></li>
+                            <li><a href="#" class="nav_link">Selfie</a></li>
+                            <li><a href="#" class="nav_link">Qr-code</a></li>
+                            <li><a href="#" class="nav_link">Recorder</a></li>
+                        </ul>
+                        <div class="nav_items">
+                            <a href="#" class="btn nav_btn">My Github</a>
+                            <span class="menu_btn"><i class="fas fa-bars"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="camera">
+                <video id="video">Video stream not available.</video>
+                <div class="camera_item">
+                    <button class="take_photo"><i class="fas fa-camera"></i></button>
+                    <button class="control_sound"><i class="fas fa-microphone-slash"></i></button>
+                </div>
+            </div>
+            <div class="image">
+                <canvas id="canvas"></canvas>
+                <div class="output">
+                    <img class="photo" alt="Selfie photo">
+                    <button class="close_btn"><i class="fas fa-times"></i></button>
+                    <a href="" class="selfie_down" download="selfie.png">Download <i class="fas fa-download"></i></a>
+                </div>
+            </div> 
+            <div class="social-bar">
+                <a href="https://www.facebook.com/suyunbek.saydazimov.18/">
+                    <div class="social-bar__item social-bar__fb">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <a href="https://twitter.com/MrUzcoin">
+                    <div class="social-bar__item social-bar__twitter">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <a href="https://t.me/MrUzcoin">
+                    <div class="social-bar__item social-bar__linkedin">
+                        <i class="fab fa-telegram-plane" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/mruzcoin/">
+                    <div class="social-bar__item social-bar__instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <a href="https://github.com/Uzcoin404">
+                    <div class="social-bar__item social-bar__github">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/selfie.js"></script>
+
+</body>
+</html>

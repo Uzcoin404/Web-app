@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr code generator</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav_content">
+                <div class="logo">
+                    <a href="/" class="logo_text">Uzcoin</a>
+                </div>
+                <ul class="nav_list">
+                    <li><a href="#" class="nav_link">Home</a></li>
+                    <li><a href="#" class="nav_link">Selfie</a></li>
+                    <li><a href="#" class="nav_link">Qr-code</a></li>
+                    <li><a href="#" class="nav_link">Recorder</a></li>
+                </ul>
+                <div class="nav_items">
+                    <a href="#" class="btn nav_btn">My Github</a>
+                    <span class="menu_btn"><i class="fas fa-bars"></i></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="main">
+        <h1 class="title">QR code Generator <i class="fas fa-qrcode"></i></h1>
+        <div class="container">
+            <div class="wrapper qrcode">
+                <div class="details">
+                    <fieldset>
+                        <label for="" class="details_label">Enter QR code text (key)</label>
+                        <input type="text" class="input code_name" value="https://github.com/Uzcoin404" placeholder="Type here">
+                    </fieldset>
+                    <fieldset>
+                        <label for="" class="details_label">Choose QR code color <i class="fas fa-palette"></i></label>
+                        <input type="color" class="input color_input code_color" title="Choose with palette" value="#091353">
+                        <p class="warn_alert">Please select darker colors for better performance</p>
+                    </fieldset>
+                    <fieldset class="correct_level">
+                        <label for="" class="details_label">QR code correct Level</label>
+                        <input type="range" min="0" max="2" value="1" class="input range_input code_level" title="L - Low, M - Medium, H - High">
+                        <div class="range_item"><span>L</span><span>M</span><span>H</span></div>
+                        <p>L - Low, M - Medium, H - High. Default value is M (recommend)</p>
+                    </fieldset>
+                    <button class="btn qr_submit">Generate QR Code</button>
+                </div>
+                <div class="preview">
+                    <div class="qrcode_img" id="qrcode_img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="social-bar">
+            <a href="https://www.facebook.com/suyunbek.saydazimov.18/">
+                <div class="social-bar__item social-bar__fb">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </div>
+            </a>
+            <a href="https://twitter.com/MrUzcoin">
+                <div class="social-bar__item social-bar__twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </div>
+            </a>
+            <a href="https://t.me/MrUzcoin">
+                <div class="social-bar__item social-bar__linkedin">
+                    <i class="fab fa-telegram-plane" aria-hidden="true"></i>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/mruzcoin/">
+                <div class="social-bar__item social-bar__instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </div>
+            </a>
+            <a href="https://github.com/Uzcoin404">
+                <div class="social-bar__item social-bar__github">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/qrcode.min.js"></script>
+    <script src="../js/qr-code.js"></script>
+
+</body>
+</html>
